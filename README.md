@@ -1,2 +1,2 @@
 # studying_aqa
-Studying AQA
+Домашние задания по Python
