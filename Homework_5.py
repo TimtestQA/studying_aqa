@@ -1,10 +1,15 @@
+# Домашнее задание на тему "Условные операторы и вложенные операторы":
+# Задание 1
+
 num = int(input())
+
 print(positive_num = 'Число положительное' if num > 0 else 'Число отрицательное')
 
-# if num < 0:
-#     print('Число отрицательное')
-# elif num = 0:
-#     print('Число равно нулю')
+if num < 0:
+    print('Число отрицательное')
+elif num = 0:
+    print('Число равно нулю')
+
 num =  int(input())
 positive_num = 'Число положительное' if num > 0 else 'Число отрицательное'
 
@@ -17,6 +22,8 @@ if num > 0:
         print("Число 10 и больше")
     elif num == 0:
         print('Число равно нулю')
+
+# Задание 2
 
 is_raining = True
 is_sunny = True
