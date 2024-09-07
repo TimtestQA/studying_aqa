@@ -24,5 +24,20 @@ is_sunny = True
 if is_raining and is_sunny:
     print('дождь при солнце')
 
-is_raining = True
+is_raining = False
 is_sunny = True
+
+if is_raining and is_sunny:
+    print('Сегодня солнечная погода, отличный день для прогулки!')
+
+is_raining = True
+is_sunny = False
+
+if is_raining and is_sunny:
+    print('Сегодня идет дождь, возьмите зонт!')
+
+is_raining = False
+is_sunny = False
+
+if is_raining and is_sunny:
+    print('Сегодня облачно, но без осадков')
