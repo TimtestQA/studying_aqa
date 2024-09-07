@@ -40,11 +40,11 @@ if is_raining and is_sunny:
 is_raining = True
 is_sunny = False
 
-if is_raining and is_sunny:
+if is_raining or is_sunny:
     print('Сегодня идет дождь, возьмите зонт!')
 
-is_raining = False
-is_sunny = False
+is_raining = True
+is_sunny = True
 
-if is_raining and is_sunny:
+if is_raining or is_sunny:
     print('Сегодня облачно, но без осадков')
