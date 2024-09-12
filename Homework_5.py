@@ -1,3 +1,4 @@
+
 # Домашнее задание на тему "Условные операторы и вложенные операторы":
 # Задание 1
 
@@ -23,27 +24,20 @@ if num > 0:
     elif num == 0:
         print('Число равно нулю')
 
+
 # Задание 2
-
-is_raining = True
-is_sunny = True
-
-if is_raining and is_sunny:
-    print('дождь при солнце')
-is_raining = True
-is_sunny = True
-
-if is_raining and is_sunny:
-    print('Сегодня солнечная погода, отличный день для прогулки!')
-
-is_raining = True
+is_raining = False
 is_sunny = False
 
-if is_raining or is_sunny:
-    print('Сегодня идет дождь, возьмите зонт!')
 
-is_raining = True
-is_sunny = True
+if is_raining and not is_sunny:
+    print("Сегодня идет дождь, возьмите зонт!")
+elif not is_raining and is_sunny:
+    print("Сегодня солнечная погода, отличный день для прогулки!")
+elif not is_raining and not is_sunny:
+    print("Сегодня облачно, но без осадков")
+elif is_raining and is_sunny:
+    print("погода прадокс")
 
-if is_raining or is_sunny:
-    print('Сегодня облачно, но без осадков')
+
+
