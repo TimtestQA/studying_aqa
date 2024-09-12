@@ -35,7 +35,7 @@ assert "gender" in student, "Ключ 'gender'отсутствует в теле
 
 print(student.keys())
 
-print((student.values()))student
+print((student.values())
 
 
 # Задание 2:
