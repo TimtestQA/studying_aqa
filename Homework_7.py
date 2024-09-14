@@ -23,7 +23,7 @@ print(numerics_list)
 # в диапазоне от 1 до 100.
 total = 1
 
-while  0 < total <100:
+while  1 <= total <100:
         total +=1
         if total // 7:
             break
