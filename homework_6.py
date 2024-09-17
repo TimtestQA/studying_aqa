@@ -18,24 +18,26 @@
 student = {
     "name": "Timofey",
     "age": 33,
-    "subjekts": [
+    "subjects": [
         "python",
-        "seleium"
+        "selenium"
     ],
     "average_score": 4
 }
 
 student ["average_score"] = 4.75
-student ["subjekts"].append("physiks")
+student ["subjects"].append("physics")
 del student ["age"]
 
-assert "age" in student, "Ключ 'Age'отсутствует в теле"
+assert "age" not in student, "Ключ 'Age' существует"
+print("Ключ 'age' не существует")
 
-assert "gender" in student, "Ключ 'gender'отсутствует в теле"
+assert "gender" not in student, "Ключ 'gender' существует"
+print("Ключ 'gender' не существует")
 
 print(student.keys())
 
-print((student.values())
+print((student.values()))
 
 
 # Задание 2:
@@ -95,9 +97,10 @@ print(icon_value, campaign_id_value, sep = "\n")
 
 helpicon_is_false = response["conditions"]["trustfactors"][0]["helpIcon"]
 
-print(services_type_info)
-
 
 assert False == helpicon_is_false, "helpIcon is not False"
+print("helpIcon is False")
 
 services_type_info = response["services"][2]
+
+print(services_type_info)
