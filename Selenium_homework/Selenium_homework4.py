@@ -14,7 +14,7 @@ options = webdriver.ChromeOptions()
 options.add_argument("--window-size=1920,1080")
 
 preferences = {
-    "download.default_directory" : os.path.join(os.getcwd(), "download")
+    "download.default_directory" : os.path.join(os.getcwd(), "lesson_6/downloads")
 }
 
 options.add_experimental_option("prefs", preferences)
