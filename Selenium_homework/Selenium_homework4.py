@@ -14,7 +14,7 @@ options = webdriver.ChromeOptions()
 options.add_argument("--window-size=1920,1080")
 
 preferences = {
-    "download.default_directory" : os.path.join(os.getcwd(), "lesson_6/downloads")
+    "download.default_directory" : os.path.join(os.getcwd(), "download")
 }
 
 options.add_experimental_option("prefs", preferences)
@@ -25,7 +25,7 @@ driver.get("https://demoqa.com/upload-download")
 
 UPLOAD_FILE_FIELD = driver.find_element("xpath", "//input[@type='file']")
 
-UPLOAD_FILE_FIELD.send_keys(os.path.join(os.getcwd(), "Uplodatest.py"))
+UPLOAD_FILE_FIELD.send_keys(os.path.join(os.getcwd(), "Uploadtest.py"))
 
 time.sleep(2)
 
@@ -33,7 +33,7 @@ time.sleep(2)
 driver.get("http://the-internet.herokuapp.com/download")
 
 time.sleep(2)
-
+input()
 print("Количество файлов для скачивания", len(driver.find_elements("xpath","//div//a[contains(@href, 'download')]")))
 
 DOWNLOAD_FILES = driver.find_elements("xpath","//div//a[contains(@href, 'download')]")
