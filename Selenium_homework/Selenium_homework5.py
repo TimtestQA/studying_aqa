@@ -29,4 +29,6 @@ wait.until(EC.element_to_be_clickable(BUTTON_TO_BE_ENABLE), f"Кнопка {BUTT
 
 wait.until(EC.visibility_of_element_located(DISABLE_OR_ENABLE_BUTTON)).click()
 
-wait.until(EC.invisibility_of_element(DISABLE_OR_ENABLE_BUTTON), f"Кнопка {DISABLE_OR_ENABLE_BUTTON} активная")
+wait.until(EC.element_located_selection_state_to_be(DISABLE_OR_ENABLE_BUTTON, is_selected=False),f"Кнопка {DISABLE_OR_ENABLE_BUTTON} не выключена")
+
+wait.until(EC.element_located_selection_state_to_be(("xpath","//button[@id='but1']"), is_selected=False))
