@@ -66,9 +66,3 @@ else:
         wait.until(EC.element_to_be_clickable(BACK_TO_CATALOG)).click()
 
         pickle.dump(driver.get_cookies(), open(cookies_path, "wb"))
-
-
-
-
-
-
