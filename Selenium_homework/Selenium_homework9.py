@@ -28,11 +28,22 @@ driver.get("https://seiyria.com/bootstrap-slider")
 
 SLIDER_LCATOR = ("xpath", "//div[@id='example-8'] //div[@class='slider slider-horizontal'] "
                           "//div[@class='slider-handle min-slider-handle round']")
+
 slider = driver.find_element(*SLIDER_LCATOR)
 
 action.scroll_to_element(slider).perform()
+driver.execute_script("""
+            window.scrollTo({
+                top: window.scrollY + 500,
+            });
+            """)
+
+
 
 def movie_slider(endpoint: int, step: int, slider:WebElement ):
+
+
+
     current_position = int(slider.get_attribute("aria-valuenow"))
 
     if endpoint > current_position:
@@ -45,9 +56,12 @@ def movie_slider(endpoint: int, step: int, slider:WebElement ):
 
     final_position = int(slider.get_attribute("aria-valuenow"))
 
-    print (f' Итоговое значение {final_position}')
+    print (f'Итоговое значение {final_position}')
 
     assert final_position == endpoint, "Слайдер на неверной позиции, проверьте шаг и значения"
 
 
-movie_slider(10, 1,slider )
+
+movie_slider(8, 1,slider )
+
+driver.quit()
