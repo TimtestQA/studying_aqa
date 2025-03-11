@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Тест юзеров города и Джунглей","2264","Тест авторизации with jung_prodtes@mak.ru","","Sun Jan 05 22:04:23 MSK 2025","passed","Sun Jan 05 22:04:25 MSK 2025","TestAutorization","test_autorizatoin","",""
+"Тест юзеров города и Джунглей","1285","Тест авторизации with newf-trainings@mak.ru","","Sun Jan 05 22:04:06 MSK 2025","passed","Sun Jan 05 22:04:08 MSK 2025","TestAutorization","test_autorizatoin","",""
+"Тест юзеров города и Джунглей","1264","Тест авторизации with jung_prodtes@mak.ru","","Sun Jan 05 22:04:05 MSK 2025","passed","Sun Jan 05 22:04:06 MSK 2025","TestAutorization","test_autorizatoin","",""
